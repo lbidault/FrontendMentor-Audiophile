@@ -1,0 +1,182 @@
+:root {
+  --brown: #d87d4a;
+  --light-brown: #fbaf85;
+  --light-black: #101010;
+  --white: #ffffff;
+  --dark-white: #f1f1f1;
+  --black: #000000;
+  --med-white: #fafafa;
+}
+
+html {
+  min-width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1 {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+
+.h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1100px) {
+  .h2 {
+    font-size: 28px;
+    line-height: auto;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 654px) {
+  .h1 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+  }
+  .h6 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+.h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+.h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+.h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+.overline {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+}
+
+.sub {
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.p {
+  opacity: 0.75;
+}
+
+.op {
+  opacity: 0.5;
+}
+
+.hide-text {
+  opacity: 0;
+}
+
+.brown-text {
+  color: var(--brown);
+}
+
+.radius-short {
+  border-radius: 0.5em;
+}
+
+.margin-char {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.margin-short {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.margin {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.margin-top {
+  margin-top: 3rem;
+}
+
+.margin-bottom {
+  margin-bottom: 3rem;
+}
+
+.container {
+  min-width: 1350px;
+  max-width: 1350px;
+}
+
+@media screen and (max-width: 1680px) {
+  .container {
+    min-width: calc(100vw - 330px);
+    max-width: calc(100vw - 330px);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    min-width: calc(100vw - 160px);
+    max-width: calc(100vw - 160px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    min-width: calc(100vw - 79px);
+    max-width: calc(100vw - 79px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    min-width: calc(100vw - 48px);
+    max-width: calc(100vw - 48px);
+  }
+}
