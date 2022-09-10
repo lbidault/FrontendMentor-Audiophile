@@ -1,0 +1,32 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-p {
+  opacity: 0.75;
+}
+
+.about-img {
+  margin-left: 5em;
+}
+
+@media screen and (max-width: 1378px) {
+  .about {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-img {
+    margin-left: 0em;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,140 @@
+.fill-screen {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cart-container {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.cart {
+  border-radius: 0.5em;
+  padding: 2rem;
+  min-width: 33%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .sub {
+    opacity: 0.5;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .sub:hover {
+    color: var(--brown);
+  }
+}
+
+.cart-product-container {
+  min-width: 100%;
+  max-height: 18em;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.cart-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    margin-right: 0.5rem;
+    max-width: 4rem;
+  }
+}
+
+.cp-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black);
+  img {
+    border-radius: 0.25rem;
+    overflow: hidden;
+  }
+}
+
+.cp-info {
+  margin-right: 0.5rem;
+  min-width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .margin-char {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.cp-add-settings {
+  background-color: var(--dark-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    min-width: 1.5em;
+    max-width: 1.5em;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.cart-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+  }
+}
+
+.cart-link {
+  min-width: 100%;
+  .shared-button {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 654px) {
+  .cart-container {
+    justify-content: center;
+  }
+  .cart {
+    min-width: calc(100% - 4em);
+  }
+  .cp-add-settings {
+    p {
+      min-width: 0em;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .cp-info {
+    min-width: 0rem;
+  }
+  .cp-block img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
