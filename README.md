@@ -15,7 +15,10 @@ Ce site ne contient pas de back-end, les données relatives aux produits sont fo
 Challenge Frontend Mentor de difficulté 5.
 
 - Énoncé: https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx
-- Résultat: https://audiophile-frontendmentor.netlify.app/
+- Résultat: https://lbidault-audiophile-frontendmentor.netlify.app
+
+Resources
+)
 
 ## Développé avec
 
